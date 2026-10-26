@@ -1,0 +1,60 @@
+\section{Cells with no full pass}\label{app:zero-diagnostics}
+Each row contains eight attempts and no full pass. Counts after requirement names are failed verdicts out of eight and may overlap. The Zero column counts zero-reward attempts. Where mandatory failures are absent, the last column lists other scored failures. In mixed rows, it also lists the non-mandatory failures among attempts receiving partial credit (reward greater than zero and less than one). These counts refer only to those attempts and may overlap. The table reports recorded grader outcomes. Single-query required-actions failures include mechanically determined failures of authoritative bound checks and judge-assessed failures on the remaining assessment path, as described in Section~3.5.
+
+{\small
+\begin{longtable}{@{}p{0.12\linewidth}p{0.09\linewidth}p{0.06\linewidth}p{0.64\linewidth}@{}}
+\caption{Failed requirements in every model--task cell with no full pass.}\\
+\toprule Task & Model & Zero & Failed requirements (count); partial-credit failures where applicable\\\midrule\endfirsthead
+\toprule Task & Model & Zero & Failed requirements (count); partial-credit failures where applicable\\\midrule\endhead
+SQ-1 & Opus & 8 & required actions (8)\\\addlinespace
+SQ-1 & Sol & 8 & required actions (8)\\\addlinespace
+SQ-2 & Sol & 8 & required actions (8)\\\addlinespace
+SQ-6 & Gemini & 7 & required actions (7); main answer (4). For the single attempt receiving partial credit: status (1).\\\addlinespace
+SQ-7 & Opus & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-9 & Opus & 7 & main answer (7); required actions (7). For the single attempt receiving partial credit: conduct (1).\\\addlinespace
+SQ-9 & Sol & 2 & required actions (2). Among 6 attempts receiving partial credit: conduct (6); package (1).\\\addlinespace
+SQ-10 & Gemini & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-10 & Grok & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-10 & Opus & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-10 & Sol & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-11 & Grok & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-14 & Opus & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-15 & Gemini & 8 & required actions (8)\\\addlinespace
+SQ-15 & Opus & 8 & required actions (8); main answer (2)\\\addlinespace
+SQ-15 & Sol & 8 & required actions (8)\\\addlinespace
+SQ-18 & Grok & 8 & main answer (8); required actions (3)\\\addlinespace
+SQ-18 & Opus & 8 & required actions (8); main answer (7)\\\addlinespace
+SQ-20 & Gemini & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-20 & Grok & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-21 & Gemini & 8 & required actions (8); main answer (4)\\\addlinespace
+SQ-22 & Gemini & 8 & main answer (8); required actions (8)\\\addlinespace
+SQ-24 & Opus & 8 & required actions (8)\\\addlinespace
+MQ-2 & Gemini & 8 & decision explanation (8); decision matrix (8); decision money (8); actionable handoffs (1)\\\addlinespace
+MQ-2 & Opus & 8 & decision explanation (8); decision matrix (8); decision money (8); actionable handoffs (1)\\\addlinespace
+MQ-2 & Sol & 8 & decision explanation (8); actionable handoffs (8); decision matrix (8); decision money (8)\\\addlinespace
+MQ-3 & Sol & 8 & payment state (8); waiver route (7); documented (5); figures in outputs (2); case and delivery (1); authority report (1)\\\addlinespace
+MQ-5 & Sol & 8 & cash reconciliation (8); payment authority (7); shared title decision (6)\\\addlinespace
+MQ-7 & Gemini & 8 & confirmed collection (8); release economics (3)\\\addlinespace
+MQ-7 & Grok & 8 & release economics (8); consent allocations (8); confirmed collection (1)\\\addlinespace
+MQ-7 & Sol & 8 & release economics (8); confirmed collection (7); consent allocations (7)\\\addlinespace
+MQ-9 & Sol & 8 & main final (8); collection math (8); release control (8)\\\addlinespace
+MQ-11 & Opus & 8 & bsa and no tipping (8); main answer (4); originator callback (4)\\\addlinespace
+MQ-13 & Gemini & 0 & Other: status fidelity (8); instruction record (3)\\\addlinespace
+MQ-14 & Sol & 8 & servicing scope (8); planning math (7); conditional debit (4)\\\addlinespace
+MQ-15 & Gemini & 8 & main answer (8)\\\addlinespace
+MQ-15 & Sol & 8 & main answer (8); approval scope (2)\\\addlinespace
+MQ-16 & Gemini & 8 & collateral scope (8); credit review routed (8); title process (4); payoff math (3)\\\addlinespace
+MQ-16 & Sol & 8 & payoff math (8); collateral scope (8); title process (6); credit review routed (5); replacement scope (4)\\\addlinespace
+MQ-17 & Opus & 8 & release scope (6); operational referrals (6); settlement allocation (4); equipment payment approved (3); case record and status (2); exception response (1); initial report (1); approval action scope (1)\\\addlinespace
+MQ-18 & Grok & 7 & main answer (7); ruth followup (6). For the single attempt receiving partial credit: documented sources (1).\\\addlinespace
+MQ-18 & Opus & 2 & ruth followup (2). Among 6 attempts receiving partial credit: documented sources (6).\\\addlinespace
+MQ-18 & Sol & 8 & main answer (8); ruth followup (8)\\\addlinespace
+MQ-19 & Opus & 8 & payoff math (8); pricing exception (5); quote message (5)\\\addlinespace
+MQ-21 & Sol & 8 & method (8); main answer (4); final revision (4); case live (1); initial disposition (1); credit admin handoff (1)\\\addlinespace
+MQ-22 & Grok & 8 & wire boundary (7); wire verification routed (7); customer reply (2)\\\addlinespace
+MQ-22 & Opus & 8 & wire boundary (7); customer reply (7); wire verification routed (7); receipt review (1)\\\addlinespace
+MQ-24 & Sol & 8 & main answer (7); posting authority (5); held requirements (1)\\\addlinespace
+MQ-25 & Gemini & 4 & draw approved (4). Among 4 attempts receiving partial credit: documented (4).\\\addlinespace
+MQ-25 & Opus & 7 & main answer (7); draw approved (5). For the single attempt receiving partial credit: documented (1); status (1).\\\addlinespace
+\bottomrule\end{longtable}
+}

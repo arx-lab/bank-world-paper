@@ -1,0 +1,47 @@
+\section{Diagnosing extreme results}\label{app:extreme-diagnostics}
+This audit uses saved trajectories, tool responses, user messages and task contracts. Requirement-level failure counts cover all 88 attempts across Sol's 11 multi-query tasks with eight zero rewards. Table~\ref{tab:sol-zero-traces} supplements those counts with one deterministically selected trace per task---the first attempt in analysis-ID order---to illustrate concrete errors. The examples do not estimate how frequently each error mechanism occurred.
+
+\subsection{SQ-10: supplier-payment capacity}
+All 32 attempts receive zero reward and fail the combined supplier-payment capacity check. The available amount is
+\[
+\$40{,}000-\$11{,}313.78-\$9{,}000-\$7{,}500-\$4{,}500=\$7{,}686.22.
+\]
+The terms are the gross facility limit, drawn principal, two existing drafts and a reservation. The approvals authorize the supported available amount; they do not increase the gross limit. A calculation that subtracts only drafts and the reservation yields \$19,000 and double-counts already drawn capacity.
+
+All 32 attempts created payment instructions exceeding the available facility capacity of \$7,686.22: 31 instructed \$19,000 and one instructed \$24,200. The illustrated Sol trace omits existing drawn principal despite retrieving it from the loan record. This trace explains one observed calculation error; the cohort-wide finding is that every attempt exceeded the supported capacity.
+
+\subsection{Sol's multi-query zero cluster}
+Sol has 112 zero rewards, 3 partial rewards and 85 full passes. 11 tasks account for 88 zeros; 5 other tasks (MQ-6, MQ-10, MQ-11, MQ-22, MQ-23) each have eight full passes. The remaining 24 zeros occur in MQ-1 (2), MQ-4 (7), MQ-12 (1), MQ-17 (7), MQ-19 (4), MQ-20 (2), MQ-25 (1). Under the scoring rule, an attempt receives zero reward if any mandatory requirement is unmet. Criterion-level results separately record the requirements it satisfied. The representative runs below all ended with the user simulator closing the conversation, rather than a recorded process failure.
+
+{\small
+\begin{longtable}{@{}p{0.11\linewidth}p{0.11\linewidth}p{0.69\linewidth}@{}}
+\caption{Observed divergences in Sol's 11 tasks with eight zero rewards. Counts of failed requirements for all attempts appear in Appendix~\ref{app:zero-diagnostics}.}\label{tab:sol-zero-traces}\\
+\toprule Task & Trace & Divergence and interpretation\\\midrule\endfirsthead
+\toprule Task & Trace & Divergence and interpretation\\\midrule\endhead
+MQ-2 & F0217 & Pays check 14227 despite the absent accepted issue row, and pays 14226/14228 before their matching rows arrive. The tool accepts the decisions; acceptance does not establish authorization under positive-pay procedure. Action and timing failure.\\\addlinespace
+MQ-3 & F0473 & Reads transactions showing returned payroll, then uses that payroll to size the reserve despite the mandate requiring the most recent completed payroll. Posts \$41,254.97/\$27,503.31 curtailments instead of \$39,003.67/\$26,002.44. State-selection failure.\\\addlinespace
+MQ-5 & F0665 & Reads the \$1,100 ordinary receipt in payment history (event 33) but does not deduct it from the \$2,400 installment. The cure is \(\$2{,}400-\$1{,}100+\$120=\$1{,}420\). Reconciliation failure; payment approval is a separate failed obligation.\\\addlinespace
+MQ-7 & F0729 & Omits the accepted \$2,700 price credit from the 85\% net-consideration calculation, producing \$20,060 instead of \$17,765 (both above the \$17,500 floor). It also leaves collection instructions unresolved rather than obtaining the manager-held route. Source and instruction-discovery failure.\\\addlinespace
+MQ-9 & F0089 & Uses the April 11 screen payoff of \$72,640.40 for the April 12 collection estimate, which requires \$72,656.31. The replacement estimate also uses rounded daily interest and misses the rate change. Calculation and source-reconciliation failure.\\\addlinespace
+MQ-14 & F0281 & Sends a planning estimate using the screen's 7.40\% rate instead of the executed 6.90\% modification, and routes a generic payoff request without the modification. It retrieves holdback documents but does not retrieve the governing modification. Source selection and servicing-scope failure.\\\addlinespace
+MQ-15 & F0313 & Correctly identifies the directed \$3,300/\$1,200 wire split and holds it for review, but omits the EQ principal applied and the LOC interest, principal application and resulting balance from its report. It also saves no case note or workpaper. Calculation-reporting and documentation failures.\\\addlinespace
+MQ-16 & F0345 & Quotes \$33,561.94 instead of \$35,624.48, omitting \$2,062.50 contractual recapture and understating interest by \$0.04 (\$132.84 rather than \$132.88). It reads the outstanding line's blanket lien but does not route the corresponding partial-release review. Calculation and collateral-scope failure.\\\addlinespace
+MQ-18 & F0409 & Uses \$501,000 and then \$600,000 as coverage floors, omitting the approved \$6,000 valuation deduction. The required floors are \$495,000 and \$594,000. It reads the cost schedule and closeout records but omits the valuation revision. Source-reconciliation failure.\\\addlinespace
+MQ-21 & F0537 & Initially retains \$10,000 of equipment in operating expense, giving \$32,280 NOI instead of \$42,280. Later handles the corrected \$6,000 capital/\$4,000 maintenance split correctly. The initial error still fails the mandatory method criterion.\\\addlinespace
+MQ-24 & F0761 & Initially reports the April 14 quote for an April 11 settlement. It later posts the correct allocation, but approval still covers a different payoff amount and the saved statement remains stale. Calculation, approval and document-state failures.\\\bottomrule
+\end{longtable}}
+
+\paragraph{MQ-15: reporting a deferred allocation.}
+The status-first instruction permits a complete report with the directed wire held for review. A deferred allocation must preserve the full collected wire, distinguish current balances from the calculated post-allocation balances, and retain a case record explaining the hold. It must not be reported as posted, and a later explicit posting instruction must be followed. In F0313, the deferred state is valid, but the report omits the EQ principal application and the LOC interest, principal application and remaining balance. No case note or workpaper is saved. The missing report components fail the mandatory main-answer criterion; simply leaving the wire unapplied is not the failure.
+
+\subsection{Other near-floor tasks}
+\paragraph{SQ-15: record identifiers and required writes (1/32 full passes).}
+SQ-15 requires distinguishing evidenced from unresolved receipts and recording the necessary follow-up requirements against the correct customer workflow. Thirty attempts pass the main-answer criterion, but only one achieves full completion. The inspected failures include confusion between customer-entity and draft identifiers, omitted draft updates, and follow-up records without the required workflow link.
+
+The successful attempt updates the draft using the separate entity and draft identifiers, obtains the workflow identifier from the response, and creates the linked requirements. This demonstrates an executable route. Performance on this task therefore reflects both source-of-funds assessment and correct use of the record-management interface.
+
+\paragraph{MQ-7: economics and collection route (2/32 full passes).}
+The saved outcomes contain 21 release-economics failures, 22 confirmed-collection failures and 16 consent-allocation failures, with overlap. Required curtailment is the greater of \$17,500 and 85\% of net sale consideration. Applying the accepted price credit gives \(0.85\times(\$24,500-\$2,700-\$900)=\$17,765\). Omitting that credit gives \$20,060. F0729 reads the release agreement but uses the unadjusted sale price, producing \$20,060 rather than \$17,765. Its customer email asks for remittance instructions instead of carrying the confirmed route. The manager-held route requires asking: buyer pays the Bank directly, the remainder goes to Mountain Laurel, Denise pays the mover, and there is no borrower debit or receipt. Failure to elicit that required instruction differs from an instruction that the simulator delivered and the model ignored.
+
+\paragraph{MQ-2: accepted issue rows and action timing (2/32 full passes).}
+The positive-pay task requires accepted issue-file evidence before a pay decision. In F0217, the agent pays two checks before their matching accepted rows arrive and pays another whose issue row was rejected. The interface accepts these decisions, but they violate the task's payment-control requirements. Subsequent arrival of supporting evidence does not authorize an earlier decision.

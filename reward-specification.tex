@@ -1,0 +1,77 @@
+\section{Reward formulas, weights, and mandatory gates}\label{app:reward-spec}
+For an applicable rubric criterion $i$, let $v_i\in\{0,1\}$ be its verdict and $w_i>0$ its weight. Let $G$ indicate that every applicable mandatory requirement passes. The rewards are
+\begin{align}
+ r_{\mathrm{SQ}} &= G\,\frac{\sum_i w_i v_i}{\sum_i w_i},\\
+ r_{\mathrm{MQ}} &= G\,\operatorname{round}_4\!\left(\frac{1}{2}\frac{\sum_{j=1}^{D}d_j}{D}+\frac{1}{2}\frac{\sum_i w_i v_i}{\sum_i w_i}\right),
+\end{align}
+where $d_j\in\{0,1\}$ is an applicable deterministic-check verdict and $D$ is the number of such checks. When a scoring component contains no applicable requirements, it is assigned a value of 1, so the absence of applicable requirements does not reduce the reward. Applicable mandatory requirements remain binding. Multi-query scores are rounded to four decimal places. The single-query implementation subtracts a penalty of 1 for each failed mandatory criterion and floors the result at zero; because the weighted fraction lies in $[0,1]$, this is equivalent to the gate formula above. These rules reproduce all 1,600 reported rewards from their criterion and check verdicts.
+
+The tables list every rubric weight. An asterisk marks a mandatory gate; a dagger marks a requirement conditional on delivery of a specified user event. Undelivered requirements are excluded from both the numerator and denominator, rather than counted as passes or failures. Weights are normalized over applicable criteria within each attempt. Multi-query deterministic checks have equal weight within their half of the score. The listed check count is the full set; $D$ can be smaller when conditional checks are inapplicable. Names below replace underscores in criterion identifiers with spaces. The source package includes \texttt{reward-specifications.json}, listing the exact identifiers, weights, gates, and required event identifiers for each task.
+
+Single-query deterministic checks provide evidence for rubric assessment. Criteria are evaluated against the task requirements, allowing valid alternative solutions that a diagnostic check may not recognize. Mandatory requirements remain binding.
+
+{\small
+\begin{longtable}{@{}p{0.12\linewidth}p{0.83\linewidth}@{}}
+\caption{Single-query rubric weights. Asterisks mark mandatory criteria.}\\
+\toprule Task & Criterion (weight)\\\midrule\endfirsthead
+\toprule Task & Criterion (weight)\\\midrule\endhead
+SQ-1 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; advance reconciliation (0.2); email package (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-2 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; calculation (0.23); communication (0.05); conduct (0.07); status (0.08)\\\addlinespace
+SQ-3 & main answer (0.4)$^{*}$; required actions (0.2)$^{*}$; pending remittance (0.1); handoff (0.15); conduct (0.07); status (0.08)\\\addlinespace
+SQ-4 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; instrument authority (0.23); research handoff (0.05); conduct (0.07); status (0.08)\\\addlinespace
+SQ-5 & main answer (0.38)$^{*}$; required actions (0.16)$^{*}$; consistent fractional custody (0.28); delivery (0.08); conduct (0.05); status (0.05)\\\addlinespace
+SQ-6 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; gross allowance (0.2); handoff (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-7 & main answer (0.35)$^{*}$; required actions (0.2)$^{*}$; toll without restart (0.2); handoff (0.08); conduct (0.07); status (0.1)\\\addlinespace
+SQ-8 & main answer (0.4)$^{*}$; required actions (0.15)$^{*}$; rights (0.12); costs (0.13); delivery (0.05); conduct (0.07); status (0.08)\\\addlinespace
+SQ-9 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; p7 basis (0.2); package (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-10 & main answer (0.4)$^{*}$; required actions (0.2)$^{*}$; shortfalls (0.18); package (0.07); conduct (0.07); status (0.08)\\\addlinespace
+SQ-11 & main answer (0.35)$^{*}$; required actions (0.17)$^{*}$; earned scope (0.15); proof required (0.15); package (0.03); conduct (0.07); status (0.08)\\\addlinespace
+SQ-12 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; retention (0.18); recourse (0.12); package (0.05); conduct (0.04); status (0.04)\\\addlinespace
+SQ-13 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; retained support (0.13); dated application (0.1); handoff (0.05); conduct (0.07); status (0.08)\\\addlinespace
+SQ-14 & main answer (0.35)$^{*}$; required actions (0.17)$^{*}$; seller reconciliation (0.15); security (0.1); route (0.06); conduct (0.07); status (0.1)\\\addlinespace
+SQ-15 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; episode treatment (0.2); delivery (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-16 & main answer (0.35)$^{*}$; required actions (0.2)$^{*}$; price quantity separation (0.2); package (0.1); conduct (0.07); status (0.08)\\\addlinespace
+SQ-17 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; inferred custody (0.2); package (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-18 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; collection treatment (0.2); proposal package (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-19 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; assignment basis (0.2); package (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-20 & main answer (0.35)$^{*}$; required actions (0.2)$^{*}$; fee classification (0.3); pending reporting (0.1); conduct (0.03); status (0.02)\\\addlinespace
+SQ-21 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; funding reconciliation (0.2); authority controls (0.1); conduct (0.07); status (0.06)\\\addlinespace
+SQ-22 & main answer (0.4)$^{*}$; required actions (0.18)$^{*}$; valuation basis (0.16); receivable treatment (0.12); workpaper (0.07); conduct (0.04); status (0.03)\\\addlinespace
+SQ-23 & main answer (0.4)$^{*}$; required actions (0.17)$^{*}$; pending control (0.2); evidence handoff (0.08); conduct (0.07); status (0.08)\\\addlinespace
+SQ-24 & main answer (0.35)$^{*}$; required actions (0.17)$^{*}$; business day followup (0.2); formal event hold (0.08); package (0.05); conduct (0.07); status (0.08)\\\addlinespace
+SQ-25 & main answer (0.36)$^{*}$; required actions (0.14)$^{*}$; accepted obligations (0.14); derived amounts (0.16); authority requirements (0.12); conduct (0.04); status (0.04)\\\addlinespace
+\bottomrule\end{longtable}
+}
+
+{\small
+\begin{longtable}{@{}p{0.12\linewidth}p{0.49\linewidth}p{0.31\linewidth}@{}}
+\caption{Multi-query rubric weights and mandatory deterministic gates. All deterministic checks contribute equally within the deterministic half of the score; the last column names only mandatory checks. Asterisks and daggers have the meanings stated above.}\\
+\toprule Task & Rubric criterion (weight) & Deterministic checks: count; gates\\\midrule\endfirsthead
+\toprule Task & Rubric criterion (weight) & Deterministic checks: count; gates\\\midrule\endhead
+MQ-1 & earned schedule (0.4)$^{*}$$^{\dagger}$; current instruction (0.3)$^{*}$$^{\dagger}$; documented (0.2)$^{\dagger}$; status (0.1) & 7 checks; march waiver amount$^{\dagger}$; no unrequested booking\\\addlinespace
+MQ-2 & decision explanation (0.35)$^{*}$; customer confidentiality (0.2)$^{*}$; documentation (0.2); actionable handoffs (0.15)$^{*}$; status precision (0.1) & 8 checks; decision matrix; decision money\\\addlinespace
+MQ-3 & figures in outputs (0.4)$^{*}$; authority report (0.35)$^{*}$; documented (0.15)$^{*}$; other status (0.1) & 6 checks; payment state; payment authority; waiver route; fee state; case and delivery\\\addlinespace
+MQ-4 & main answer (0.4)$^{*}$; confidentiality (0.25)$^{*}$; customer service (0.15)$^{*}$; documented (0.1); honest status (0.1) & 5 checks; main state gate\\\addlinespace
+MQ-5 & cash reconciliation (0.35)$^{*}$; shared title decision (0.3)$^{*}$; buyer letter (0.2)$^{*}$; case documentation (0.1); other status (0.05) & 7 checks; funds and posting; payment authority; vehicle closed; collateral route; credit route; live case; buyer delivery\\\addlinespace
+MQ-6 & money in words (0.4)$^{*}$; approval scope (0.25)$^{*}$; audit and handoff (0.2); truthful notice (0.15) & 5 checks; funding state; execution release; item authority; handoff state; funded in time\\\addlinespace
+MQ-7 & release economics (0.35)$^{*}$; lien scope (0.3)$^{*}$; confirmed collection (0.2)$^{*}$; case audit (0.1); delivery timing (0.05) & 4 checks; consent allocations; preparation routed; added delivery; no execution\\\addlinespace
+MQ-8 & april disposition (0.35)$^{*}$; may plan (0.3)$^{*}$$^{\dagger}$; case calculation (0.2)$^{*}$; status precision (0.15) & 7 checks; payment state; no extra money\\\addlinespace
+MQ-9 & main final (0.32)$^{*}$$^{\dagger}$; collection math (0.2)$^{*}$; release control (0.16)$^{*}$; return handled (0.12)$^{\dagger}$; customer updates (0.08)$^{\dagger}$; documented (0.07); honest status (0.05) & 9 checks; no money before return; final money unchanged\\\addlinespace
+MQ-10 & initial assessment (0.24)$^{*}$; final release (0.26)$^{*}$$^{\dagger}$; eligibility method (0.16)$^{*}$; authority and approval (0.12); documentation (0.1); late turn and customer note (0.07)$^{\dagger}$; honest status (0.05) & 7 checks; reserve release total$^{\dagger}$; reserve floor$^{\dagger}$; operating balance$^{\dagger}$; approval state\\\addlinespace
+MQ-11 & main answer (0.3)$^{*}$$^{\dagger}$; bsa and no tipping (0.2)$^{*}$; third party refusal (0.12)$^{*}$; originator callback (0.15)$^{*}$$^{\dagger}$; documented (0.1)$^{\dagger}$; customer comms (0.08)$^{\dagger}$; status integrity (0.05) & 7 checks; no refund sent\\\addlinespace
+MQ-12 & funding math (0.4)$^{*}$; date revision (0.25)$^{*}$; handoff scope (0.15); case support (0.1); status truth (0.1) & 4 checks; estimates delivered; no execution\\\addlinespace
+MQ-13 & financial assessment (0.4)$^{*}$; purpose disposition (0.2)$^{*}$$^{\dagger}$; approval scope (0.15)$^{*}$; instruction record (0.15)$^{\dagger}$; status fidelity (0.1)$^{\dagger}$ & 6 checks; funded state; hold and approval order; review queue\\\addlinespace
+MQ-14 & planning math (0.4)$^{*}$; servicing scope (0.2)$^{*}$; conditional debit (0.2)$^{*}$$^{\dagger}$; documentation (0.1); honest status (0.1) & 5 checks; initial delivery; servicing routed; case record; rachel delivery$^{\dagger}$; quote only money\\\addlinespace
+MQ-15 & main answer (0.4)$^{*}$; approval scope (0.25)$^{*}$$^{\dagger}$; lender status (0.2)$^{*}$$^{\dagger}$; case documentation (0.15) & 6 checks; payment state; no release\\\addlinespace
+MQ-16 & payoff math (0.25)$^{*}$; initial scope (0.05)$^{*}$; replacement scope (0.15)$^{*}$$^{\dagger}$; collateral scope (0.15)$^{*}$$^{\dagger}$; title process (0.1)$^{*}$$^{\dagger}$; external scope (0.1)$^{*}$$^{\dagger}$; documentation (0.1); work status (0.1) & 6 checks; initial handoff; revised handoff$^{\dagger}$; credit review routed$^{\dagger}$; no settlement posting\\\addlinespace
+MQ-17 & initial report (0.2)$^{*}$; exception response (0.15)$^{*}$$^{\dagger}$; release scope (0.2)$^{*}$; referral instructions (0.1)$^{*}$; case record and status (0.1)$^{*}$; denise referral instructions (0.15)$^{*}$$^{\dagger}$; approval action scope (0.1)$^{*}$ & 5 checks; settlement allocation; equipment closed; operational referrals; exception referral$^{\dagger}$; equipment payment approved\\\addlinespace
+MQ-18 & main answer (0.35)$^{*}$; ruth followup (0.15)$^{*}$$^{\dagger}$; route and record (0.12); documented sources (0.2); agent request (0.1); coverage handling (0.08) & 5 checks; case unresolved; no money or release\\\addlinespace
+MQ-19 & payoff math (0.35)$^{*}$; effective date (0.15)$^{*}$; payment and days (0.15)$^{*}$; pricing exception (0.12)$^{*}$; workflow and writes (0.1); customer communication (0.08); status (0.05) & 9 checks; payment state; ledger reconciles; quote message; nothing else touched\\\addlinespace
+MQ-20 & main numerics (0.4)$^{*}$; amendment boundary (0.25)$^{*}$$^{\dagger}$; approval scope (0.15)$^{*}$; servicing scope (0.1)$^{*}$; communications audit (0.1) & 6 checks; permitted funding state; draw approval binding\\\addlinespace
+MQ-21 & initial disposition (0.2)$^{*}$; main answer (0.3)$^{*}$$^{\dagger}$; method (0.12)$^{*}$; waiver scope (0.08)$^{*}$$^{\dagger}$; credit admin handoff (0.1)$^{*}$; final revision (0.08)$^{*}$$^{\dagger}$; documentation (0.07); honest status (0.05) & 8 checks; credit admin route; no distribution; case live\\\addlinespace
+MQ-22 & receipt review (0.4)$^{*}$; bsa packet (0.2)$^{*}$; wire boundary (0.15)$^{*}$; customer reply (0.15)$^{*}$; documentation status (0.1) & 5 checks; bsa routed; wire verification routed; review saved; customer case record; funds preserved\\\addlinespace
+MQ-23 & basket analysis (0.4)$^{*}$; initial scope (0.2)$^{*}$; replacement control (0.25)$^{*}$$^{\dagger}$; documented (0.15) & 4 checks; initial route; team update delivery$^{\dagger}$; no bank booking\\\addlinespace
+MQ-24 & main answer (0.36)$^{*}$; held requirements (0.15)$^{*}$; pre call numbers (0.07); title status pushback (0.05)$^{*}$; f550 answer (0.04); reconciliation (0.1); settlement statement (0.07); title and insurance (0.08); status (0.04); conduct (0.04) & 12 checks; posting authority\\\addlinespace
+MQ-25 & main answer (0.5)$^{*}$; held the requirements (0.15); base answer (0.1); note to kauffman (0.08); documented (0.07); asked well (0.05); status (0.05) & 7 checks; draw approved\\\addlinespace
+\bottomrule\end{longtable}
+}

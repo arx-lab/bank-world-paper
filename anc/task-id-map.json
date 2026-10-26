@@ -1,0 +1,352 @@
+[
+  {
+    "id": "SQ-1",
+    "name": "Mercer custody recovery",
+    "setting": "SQ",
+    "source_short_id": "p10",
+    "source_task_id": "bank-w12-a4-p10-n01"
+  },
+  {
+    "id": "SQ-2",
+    "name": "Walther reconsideration",
+    "setting": "SQ",
+    "source_short_id": "p23",
+    "source_task_id": "bank-w12-a8-p23-n01"
+  },
+  {
+    "id": "SQ-3",
+    "name": "Maren Vale awards",
+    "setting": "SQ",
+    "source_short_id": "p29",
+    "source_task_id": "bank-w12-a18-p29-n01"
+  },
+  {
+    "id": "SQ-4",
+    "name": "Saucedo service remediation",
+    "setting": "SQ",
+    "source_short_id": "p41",
+    "source_task_id": "bank-w12-a18-p41-e1"
+  },
+  {
+    "id": "SQ-5",
+    "name": "Houghton subscriptions",
+    "setting": "SQ",
+    "source_short_id": "p52",
+    "source_task_id": "bank-w12-a35-p52-e1"
+  },
+  {
+    "id": "SQ-6",
+    "name": "Kwon supplier draws",
+    "setting": "SQ",
+    "source_short_id": "p68",
+    "source_task_id": "bank-w12-a29-p68-e1"
+  },
+  {
+    "id": "SQ-7",
+    "name": "Ontiveros charge correction",
+    "setting": "SQ",
+    "source_short_id": "p81",
+    "source_task_id": "bank-w12-a36-p81-e1"
+  },
+  {
+    "id": "SQ-8",
+    "name": "Tellez equipment recovery",
+    "setting": "SQ",
+    "source_short_id": "p82",
+    "source_task_id": "bank-w12-a34-p82-e1"
+  },
+  {
+    "id": "SQ-9",
+    "name": "Basalt Ridge equipment financing",
+    "setting": "SQ",
+    "source_short_id": "p87",
+    "source_task_id": "bank-w12-a51-p87-n01"
+  },
+  {
+    "id": "SQ-10",
+    "name": "McBride supplier releases",
+    "setting": "SQ",
+    "source_short_id": "p107",
+    "source_task_id": "bank-w12-a47-p107-n01"
+  },
+  {
+    "id": "SQ-11",
+    "name": "Ransom inspection consent",
+    "setting": "SQ",
+    "source_short_id": "p113",
+    "source_task_id": "bank-w12-a31-p113-e1"
+  },
+  {
+    "id": "SQ-12",
+    "name": "Basalt Ridge commissary replacement",
+    "setting": "SQ",
+    "source_short_id": "p116",
+    "source_task_id": "bank-w12-a56-p116-e1"
+  },
+  {
+    "id": "SQ-13",
+    "name": "Wickersham pad releases",
+    "setting": "SQ",
+    "source_short_id": "p123",
+    "source_task_id": "bank-w12-a31-p123-e1"
+  },
+  {
+    "id": "SQ-14",
+    "name": "Hong repair reserve",
+    "setting": "SQ",
+    "source_short_id": "p127",
+    "source_task_id": "bank-w12-a48-p127-e1"
+  },
+  {
+    "id": "SQ-15",
+    "name": "McBride source of funds",
+    "setting": "SQ",
+    "source_short_id": "p133",
+    "source_task_id": "bank-w12-a57-p133-v50"
+  },
+  {
+    "id": "SQ-16",
+    "name": "Benitez hail reimbursements",
+    "setting": "SQ",
+    "source_short_id": "p139",
+    "source_task_id": "bank-w12-a61-p139-n01"
+  },
+  {
+    "id": "SQ-17",
+    "name": "Motor-title custody costs",
+    "setting": "SQ",
+    "source_short_id": "p210",
+    "source_task_id": "bank-w12-a76-p210-n01"
+  },
+  {
+    "id": "SQ-18",
+    "name": "Soto supplier assurance",
+    "setting": "SQ",
+    "source_short_id": "p266",
+    "source_task_id": "bank-w12-a78-p266-n01"
+  },
+  {
+    "id": "SQ-19",
+    "name": "Montano crop receipts",
+    "setting": "SQ",
+    "source_short_id": "p267",
+    "source_task_id": "bank-w12-a77-p267-n01"
+  },
+  {
+    "id": "SQ-20",
+    "name": "Basalt Ridge merchant-return reconciliation",
+    "setting": "SQ",
+    "source_short_id": "p363",
+    "source_task_id": "bank-w12-a92-p363-n01"
+  },
+  {
+    "id": "SQ-21",
+    "name": "Ledesma refund preparation",
+    "setting": "SQ",
+    "source_short_id": "p381",
+    "source_task_id": "bank-w12-a103-p381-n01"
+  },
+  {
+    "id": "SQ-22",
+    "name": "Basalt Ridge partner distribution",
+    "setting": "SQ",
+    "source_short_id": "p393",
+    "source_task_id": "bank-w12-a101-p393-n01"
+  },
+  {
+    "id": "SQ-23",
+    "name": "Rosas distribution",
+    "setting": "SQ",
+    "source_short_id": "p401",
+    "source_task_id": "bank-w12-a115-p401-n01"
+  },
+  {
+    "id": "SQ-24",
+    "name": "Gaines estate notice",
+    "setting": "SQ",
+    "source_short_id": "p405",
+    "source_task_id": "bank-w12-a111-p405-n01"
+  },
+  {
+    "id": "SQ-25",
+    "name": "Tellez joint requests",
+    "setting": "SQ",
+    "source_short_id": "p427",
+    "source_task_id": "bank-w12-a116-p427-n01"
+  },
+  {
+    "id": "MQ-1",
+    "name": "Riverside late charges",
+    "setting": "MQ",
+    "source_short_id": "b1-09",
+    "source_task_id": "ridgeline-b1-09"
+  },
+  {
+    "id": "MQ-2",
+    "name": "Dalton check exceptions",
+    "setting": "MQ",
+    "source_short_id": "b1-19",
+    "source_task_id": "ridgeline-b1-19"
+  },
+  {
+    "id": "MQ-3",
+    "name": "Stone Ridge sweep",
+    "setting": "MQ",
+    "source_short_id": "b1-33",
+    "source_task_id": "ridgeline-b1-33"
+  },
+  {
+    "id": "MQ-4",
+    "name": "Juniata cash deposits",
+    "setting": "MQ",
+    "source_short_id": "b1-36",
+    "source_task_id": "ridgeline-b1-36"
+  },
+  {
+    "id": "MQ-5",
+    "name": "Stone Valley truck",
+    "setting": "MQ",
+    "source_short_id": "b1-69",
+    "source_task_id": "ridgeline-b1-69"
+  },
+  {
+    "id": "MQ-6",
+    "name": "Dalton payroll",
+    "setting": "MQ",
+    "source_short_id": "b1-72",
+    "source_task_id": "ridgeline-b1-72"
+  },
+  {
+    "id": "MQ-7",
+    "name": "Mountain Laurel release",
+    "setting": "MQ",
+    "source_short_id": "b1-78",
+    "source_task_id": "ridgeline-b1-78"
+  },
+  {
+    "id": "MQ-8",
+    "name": "Fultz and Byler installment",
+    "setting": "MQ",
+    "source_short_id": "b1-114",
+    "source_task_id": "ridgeline-b1-114"
+  },
+  {
+    "id": "MQ-9",
+    "name": "Burnham Diesel payoff",
+    "setting": "MQ",
+    "source_short_id": "b1-121",
+    "source_task_id": "ridgeline-b1-121"
+  },
+  {
+    "id": "MQ-10",
+    "name": "Electric Avenue reserve",
+    "setting": "MQ",
+    "source_short_id": "b1-130",
+    "source_task_id": "ridgeline-b1-130"
+  },
+  {
+    "id": "MQ-11",
+    "name": "Tuscarora buyer payment",
+    "setting": "MQ",
+    "source_short_id": "b1-163",
+    "source_task_id": "ridgeline-b1-163"
+  },
+  {
+    "id": "MQ-12",
+    "name": "Burnham Industrial payoff",
+    "setting": "MQ",
+    "source_short_id": "b1-177",
+    "source_task_id": "ridgeline-b1-177"
+  },
+  {
+    "id": "MQ-13",
+    "name": "Havice seasonal funding",
+    "setting": "MQ",
+    "source_short_id": "b1-240",
+    "source_task_id": "ridgeline-b1-240"
+  },
+  {
+    "id": "MQ-14",
+    "name": "Warriors Mark sale",
+    "setting": "MQ",
+    "source_short_id": "b1-243",
+    "source_task_id": "ridgeline-b1-243"
+  },
+  {
+    "id": "MQ-15",
+    "name": "Rider loader sale",
+    "setting": "MQ",
+    "source_short_id": "b1-266",
+    "source_task_id": "ridgeline-b1-266"
+  },
+  {
+    "id": "MQ-16",
+    "name": "Valley Fresh leaseback",
+    "setting": "MQ",
+    "source_short_id": "b1-279",
+    "source_task_id": "ridgeline-b1-279"
+  },
+  {
+    "id": "MQ-17",
+    "name": "Armagh crane sale",
+    "setting": "MQ",
+    "source_short_id": "b1-288",
+    "source_task_id": "ridgeline-b1-288"
+  },
+  {
+    "id": "MQ-18",
+    "name": "Kish Creek insurance",
+    "setting": "MQ",
+    "source_short_id": "b1-307",
+    "source_task_id": "ridgeline-b1-307"
+  },
+  {
+    "id": "MQ-19",
+    "name": "Granville line payoff",
+    "setting": "MQ",
+    "source_short_id": "b1-320",
+    "source_task_id": "ridgeline-b1-320"
+  },
+  {
+    "id": "MQ-20",
+    "name": "Jacks Mountain draw",
+    "setting": "MQ",
+    "source_short_id": "b1-333",
+    "source_task_id": "ridgeline-b1-333"
+  },
+  {
+    "id": "MQ-21",
+    "name": "Market Street covenant review",
+    "setting": "MQ",
+    "source_short_id": "b1-350",
+    "source_task_id": "ridgeline-b1-350"
+  },
+  {
+    "id": "MQ-22",
+    "name": "Brenneman beneficiary verification",
+    "setting": "MQ",
+    "source_short_id": "b1-354",
+    "source_task_id": "ridgeline-b1-354"
+  },
+  {
+    "id": "MQ-23",
+    "name": "Appliance inventory finance",
+    "setting": "MQ",
+    "source_short_id": "b1-372",
+    "source_task_id": "ridgeline-b1-372"
+  },
+  {
+    "id": "MQ-24",
+    "name": "Halvorsen settlement",
+    "setting": "MQ",
+    "source_short_id": "halvorsen-02",
+    "source_task_id": "ridgeline-halvorsen-02"
+  },
+  {
+    "id": "MQ-25",
+    "name": "Kauffman borrowing base",
+    "setting": "MQ",
+    "source_short_id": "kauffman-01",
+    "source_task_id": "ridgeline-kauffman-01"
+  }
+]

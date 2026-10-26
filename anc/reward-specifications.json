@@ -1,0 +1,3338 @@
+[
+  {
+    "id": "SQ-1",
+    "task_id": "bank-w12-a4-p10-n01",
+    "setting": "SQ",
+    "name": "Mercer custody recovery",
+    "category_code": "T",
+    "category": "Trust and asset allocation",
+    "description": "Allocate recovery between principal and income and reconcile the advance.",
+    "full_passes": 3,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "advance_reconciliation",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "email_package",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p10"
+  },
+  {
+    "id": "SQ-2",
+    "task_id": "bank-w12-a8-p23-n01",
+    "setting": "SQ",
+    "name": "Walther reconsideration",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Correct adverse reasons and identify the amendments needed for review.",
+    "full_passes": 3,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "calculation",
+        "weight": 0.23,
+        "must_pass": false
+      },
+      {
+        "id": "communication",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p23"
+  },
+  {
+    "id": "SQ-3",
+    "task_id": "bank-w12-a18-p29-n01",
+    "setting": "SQ",
+    "name": "Maren Vale awards",
+    "category_code": "T",
+    "category": "Trust and asset allocation",
+    "description": "Fund net awards and tax custody while retaining remittance follow-up.",
+    "full_passes": 25,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.2,
+        "must_pass": true
+      },
+      {
+        "id": "pending_remittance",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "handoff",
+        "weight": 0.15,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p29"
+  },
+  {
+    "id": "SQ-4",
+    "task_id": "bank-w12-a18-p41-e1",
+    "setting": "SQ",
+    "name": "Saucedo service remediation",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Resolve check dispositions, post service relief, and retain research work.",
+    "full_passes": 24,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "instrument_authority",
+        "weight": 0.23,
+        "must_pass": false
+      },
+      {
+        "id": "research_handoff",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p41"
+  },
+  {
+    "id": "SQ-5",
+    "task_id": "bank-w12-a35-p52-e1",
+    "setting": "SQ",
+    "name": "Houghton subscriptions",
+    "category_code": "T",
+    "category": "Trust and asset allocation",
+    "description": "Settle pooled subscriptions and return only distributable residual cash.",
+    "full_passes": 25,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.38,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.16,
+        "must_pass": true
+      },
+      {
+        "id": "consistent_fractional_custody",
+        "weight": 0.28,
+        "must_pass": false
+      },
+      {
+        "id": "delivery",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.05,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p52"
+  },
+  {
+    "id": "SQ-6",
+    "task_id": "bank-w12-a29-p68-e1",
+    "setting": "SQ",
+    "name": "Kwon supplier draws",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Reconstruct allowances, book fresh advances, and initiate supplier payments.",
+    "full_passes": 17,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "gross_allowance",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "handoff",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p68"
+  },
+  {
+    "id": "SQ-7",
+    "task_id": "bank-w12-a36-p81-e1",
+    "setting": "SQ",
+    "name": "Ontiveros charge correction",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Reconstruct the service-charge chronology and complete the correction.",
+    "full_passes": 20,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.2,
+        "must_pass": true
+      },
+      {
+        "id": "toll_without_restart",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "handoff",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.1,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p81"
+  },
+  {
+    "id": "SQ-8",
+    "task_id": "bank-w12-a34-p82-e1",
+    "setting": "SQ",
+    "name": "Tellez equipment recovery",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Value transferable equipment rights net of mandatory disposal costs.",
+    "full_passes": 18,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.15,
+        "must_pass": true
+      },
+      {
+        "id": "rights",
+        "weight": 0.12,
+        "must_pass": false
+      },
+      {
+        "id": "costs",
+        "weight": 0.13,
+        "must_pass": false
+      },
+      {
+        "id": "delivery",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p82"
+  },
+  {
+    "id": "SQ-9",
+    "task_id": "bank-w12-a51-p87-n01",
+    "setting": "SQ",
+    "name": "Basalt Ridge equipment financing",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Update equipment financing and execute authorized supplier payments.",
+    "full_passes": 12,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "p7_basis",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p87"
+  },
+  {
+    "id": "SQ-10",
+    "task_id": "bank-w12-a47-p107-n01",
+    "setting": "SQ",
+    "name": "McBride supplier releases",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Execute authorized supplier releases and deliver the supported schedule.",
+    "full_passes": 0,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.2,
+        "must_pass": true
+      },
+      {
+        "id": "shortfalls",
+        "weight": 0.18,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p107"
+  },
+  {
+    "id": "SQ-11",
+    "task_id": "bank-w12-a31-p113-e1",
+    "setting": "SQ",
+    "name": "Ransom inspection consent",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Reconcile earned charges, corrections, and scopes awaiting signed proof.",
+    "full_passes": 12,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "earned_scope",
+        "weight": 0.15,
+        "must_pass": false
+      },
+      {
+        "id": "proof_required",
+        "weight": 0.15,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.03,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p113"
+  },
+  {
+    "id": "SQ-12",
+    "task_id": "bank-w12-a56-p116-e1",
+    "setting": "SQ",
+    "name": "Basalt Ridge commissary replacement",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Revise the replacement recommendation and open required handoffs.",
+    "full_passes": 22,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "retention",
+        "weight": 0.18,
+        "must_pass": false
+      },
+      {
+        "id": "recourse",
+        "weight": 0.12,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.04,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.04,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p116"
+  },
+  {
+    "id": "SQ-13",
+    "task_id": "bank-w12-a31-p123-e1",
+    "setting": "SQ",
+    "name": "Wickersham pad releases",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Calculate dated principal cures and residuals for two property closings.",
+    "full_passes": 9,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "retained_support",
+        "weight": 0.13,
+        "must_pass": false
+      },
+      {
+        "id": "dated_application",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "handoff",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p123"
+  },
+  {
+    "id": "SQ-14",
+    "task_id": "bank-w12-a48-p127-e1",
+    "setting": "SQ",
+    "name": "Hong repair reserve",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Prepare a supported repair-reserve recommendation for approval.",
+    "full_passes": 14,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "seller_reconciliation",
+        "weight": 0.15,
+        "must_pass": false
+      },
+      {
+        "id": "security",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "route",
+        "weight": 0.06,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.1,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p127"
+  },
+  {
+    "id": "SQ-15",
+    "task_id": "bank-w12-a57-p133-v50",
+    "setting": "SQ",
+    "name": "McBride source of funds",
+    "category_code": "K",
+    "category": "Compliance and information controls",
+    "description": "Separate evidenced and unresolved receipts and open follow-up requirements.",
+    "full_passes": 1,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "episode_treatment",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "delivery",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p133"
+  },
+  {
+    "id": "SQ-16",
+    "task_id": "bank-w12-a61-p139-n01",
+    "setting": "SQ",
+    "name": "Benitez hail reimbursements",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Resolve three reimbursement files and retain separate Treasury authority.",
+    "full_passes": 17,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.2,
+        "must_pass": true
+      },
+      {
+        "id": "price_quantity_separation",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p139"
+  },
+  {
+    "id": "SQ-17",
+    "task_id": "bank-w12-a76-p210-n01",
+    "setting": "SQ",
+    "name": "Motor-title custody costs",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Prepare two cost dispositions and a customer letter without posting charges.",
+    "full_passes": 9,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "inferred_custody",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p210"
+  },
+  {
+    "id": "SQ-18",
+    "task_id": "bank-w12-a78-p266-n01",
+    "setting": "SQ",
+    "name": "Soto supplier assurance",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Update two consideration quotes while preserving release restrictions.",
+    "full_passes": 6,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "collection_treatment",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "proposal_package",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p266"
+  },
+  {
+    "id": "SQ-19",
+    "task_id": "bank-w12-a77-p267-n01",
+    "setting": "SQ",
+    "name": "Montano crop receipts",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Apply collected crop receipts under the signed assignment mandate.",
+    "full_passes": 27,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "assignment_basis",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p267"
+  },
+  {
+    "id": "SQ-20",
+    "task_id": "bank-w12-a92-p363-n01",
+    "setting": "SQ",
+    "name": "Basalt Ridge merchant-return reconciliation",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Reconcile net return credits, fees, prior refunds, and pending exceptions.",
+    "full_passes": 3,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.2,
+        "must_pass": true
+      },
+      {
+        "id": "fee_classification",
+        "weight": 0.3,
+        "must_pass": false
+      },
+      {
+        "id": "pending_reporting",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.03,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.02,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p363"
+  },
+  {
+    "id": "SQ-21",
+    "task_id": "bank-w12-a103-p381-n01",
+    "setting": "SQ",
+    "name": "Ledesma refund preparation",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Reconcile three refund proposals and obtain missing co-owner direction.",
+    "full_passes": 8,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "funding_reconciliation",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "authority_controls",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.06,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p381"
+  },
+  {
+    "id": "SQ-22",
+    "task_id": "bank-w12-a101-p393-n01",
+    "setting": "SQ",
+    "name": "Basalt Ridge partner distribution",
+    "category_code": "T",
+    "category": "Trust and asset allocation",
+    "description": "Allocate assets and cash while preserving an unpaid receivable.",
+    "full_passes": 17,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.18,
+        "must_pass": true
+      },
+      {
+        "id": "valuation_basis",
+        "weight": 0.16,
+        "must_pass": false
+      },
+      {
+        "id": "receivable_treatment",
+        "weight": 0.12,
+        "must_pass": false
+      },
+      {
+        "id": "workpaper",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.04,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.03,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p393"
+  },
+  {
+    "id": "SQ-23",
+    "task_id": "bank-w12-a115-p401-n01",
+    "setting": "SQ",
+    "name": "Rosas distribution",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Pay the cleared entitlement and retain the proof-dependent hold.",
+    "full_passes": 20,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "pending_control",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "evidence_handoff",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p401"
+  },
+  {
+    "id": "SQ-24",
+    "task_id": "bank-w12-a111-p405-n01",
+    "setting": "SQ",
+    "name": "Gaines estate notice",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Record the estate event, maintain the collection hold, and date follow-ups.",
+    "full_passes": 14,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.17,
+        "must_pass": true
+      },
+      {
+        "id": "business_day_followup",
+        "weight": 0.2,
+        "must_pass": false
+      },
+      {
+        "id": "formal_event_hold",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "package",
+        "weight": 0.05,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.07,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.08,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p405"
+  },
+  {
+    "id": "SQ-25",
+    "task_id": "bank-w12-a116-p427-n01",
+    "setting": "SQ",
+    "name": "Tellez joint requests",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Update two equipment requests while preserving existing commitments.",
+    "full_passes": 24,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.36,
+        "must_pass": true
+      },
+      {
+        "id": "required_actions",
+        "weight": 0.14,
+        "must_pass": true
+      },
+      {
+        "id": "accepted_obligations",
+        "weight": 0.14,
+        "must_pass": false
+      },
+      {
+        "id": "derived_amounts",
+        "weight": 0.16,
+        "must_pass": false
+      },
+      {
+        "id": "authority_requirements",
+        "weight": 0.12,
+        "must_pass": false
+      },
+      {
+        "id": "conduct",
+        "weight": 0.04,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.04,
+        "must_pass": false
+      }
+    ],
+    "guard_penalty": 1.0,
+    "source_short_id": "p427"
+  },
+  {
+    "id": "MQ-1",
+    "task_id": "ridgeline-b1-09",
+    "setting": "MQ",
+    "name": "Riverside late charges",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Recalculate amended installments and route the approved fee disposition.",
+    "full_passes": 23,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "earned_schedule",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": [
+          "payment_date_paper"
+        ]
+      },
+      {
+        "id": "current_instruction",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": [
+          "march_only"
+        ]
+      },
+      {
+        "id": "documented",
+        "weight": 0.2,
+        "must_pass": false,
+        "requires": [
+          "march_only"
+        ]
+      },
+      {
+        "id": "status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "proposal_submitted",
+        "must_pass": false,
+        "requires": [
+          "broad_waiver"
+        ]
+      },
+      {
+        "id": "handoff_authorized",
+        "must_pass": false,
+        "requires": [
+          "march_only"
+        ]
+      },
+      {
+        "id": "march_waiver_amount",
+        "must_pass": true,
+        "requires": [
+          "march_only",
+          "payment_date_paper"
+        ]
+      },
+      {
+        "id": "servicing_tickets",
+        "must_pass": false,
+        "requires": [
+          "march_only"
+        ]
+      },
+      {
+        "id": "workpaper_and_case",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "customer_update",
+        "must_pass": false,
+        "requires": [
+          "march_only"
+        ]
+      },
+      {
+        "id": "no_unrequested_booking",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-09"
+  },
+  {
+    "id": "MQ-2",
+    "task_id": "ridgeline-b1-19",
+    "setting": "MQ",
+    "name": "Dalton check exceptions",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Decide check exceptions, obtain instructions, and route required follow-up.",
+    "full_passes": 2,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "decision_explanation",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_confidentiality",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "documentation",
+        "weight": 0.2,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "actionable_handoffs",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "status_precision",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "decision_matrix",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "decision_money",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "callback_window",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "cutoff",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "bsa_routing",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "customer_delivery",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_record",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "scope_preserved",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-19"
+  },
+  {
+    "id": "MQ-3",
+    "task_id": "ridgeline-b1-33",
+    "setting": "MQ",
+    "name": "Stone Ridge sweep",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Reconstruct available cash, honor reserves, and execute the approved sweep.",
+    "full_passes": 16,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "figures_in_outputs",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "authority_report",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "documented",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "other_status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "payment_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "payment_authority",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "waiver_route",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "fee_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_and_delivery",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "unrequested_changes",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-33"
+  },
+  {
+    "id": "MQ-4",
+    "task_id": "ridgeline-b1-36",
+    "setting": "MQ",
+    "name": "Juniata cash deposits",
+    "category_code": "K",
+    "category": "Compliance and information controls",
+    "description": "Aggregate currency receipts, route BSA review, and handle customer requests.",
+    "full_passes": 14,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "confidentiality",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_service",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "documented",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "honest_status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "referral_routed",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "customer_contact_order",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "customer_delivery",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "money_untouched",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "main_state_gate",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-36"
+  },
+  {
+    "id": "MQ-5",
+    "task_id": "ridgeline-b1-69",
+    "setting": "MQ",
+    "name": "Stone Valley truck",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Complete the authorized payoff while preserving the unresolved title hold.",
+    "full_passes": 17,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "cash_reconciliation",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "shared_title_decision",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "buyer_letter",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_documentation",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "other_status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "funds_and_posting",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "payment_authority",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "vehicle_closed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "collateral_route",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "credit_route",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "live_case",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "buyer_delivery",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-69"
+  },
+  {
+    "id": "MQ-6",
+    "task_id": "ridgeline-b1-72",
+    "setting": "MQ",
+    "name": "Dalton payroll",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Combine available cash and approved borrowing while preserving reserves.",
+    "full_passes": 24,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "money_in_words",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "approval_scope",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "audit_and_handoff",
+        "weight": 0.2,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "truthful_notice",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "funding_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "execution_release",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "item_authority",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "handoff_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "funded_in_time",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-72"
+  },
+  {
+    "id": "MQ-7",
+    "task_id": "ridgeline-b1-78",
+    "setting": "MQ",
+    "name": "Mountain Laurel release",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Calculate treadmill-release terms and route the authorized collateral work.",
+    "full_passes": 2,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "release_economics",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "lien_scope",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "confirmed_collection",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_audit",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "delivery_timing",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "consent_allocations",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "preparation_routed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "added_delivery",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "no_execution",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-78"
+  },
+  {
+    "id": "MQ-8",
+    "task_id": "ridgeline-b1-114",
+    "setting": "MQ",
+    "name": "Fultz and Byler installment",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Post the April wire and update servicing for revised draft instructions.",
+    "full_passes": 19,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "april_disposition",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "may_plan",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": [
+          "may_instruction"
+        ]
+      },
+      {
+        "id": "case_calculation",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "status_precision",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "payment_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "no_extra_money",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_task",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "may_servicing_task",
+        "must_pass": false,
+        "requires": [
+          "may_instruction"
+        ]
+      },
+      {
+        "id": "case_pending",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_audit",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "luke_contacted",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-114"
+  },
+  {
+    "id": "MQ-9",
+    "task_id": "ridgeline-b1-121",
+    "setting": "MQ",
+    "name": "Burnham Diesel payoff",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Withdraw staged release work after a returned check and revise the quote.",
+    "full_passes": 5,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_final",
+        "weight": 0.32,
+        "must_pass": true,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "collection_math",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "release_control",
+        "weight": 0.16,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "return_handled",
+        "weight": 0.12,
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "customer_updates",
+        "weight": 0.08,
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "documented",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "honest_status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "initial_quote_request",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "staged_title_task",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_money_before_return",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "initial_support_artifact",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "check_return_state",
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "withdrawal_task",
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "replacement_quote_request",
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "customer_recipients",
+        "must_pass": false,
+        "requires": [
+          "check_return"
+        ]
+      },
+      {
+        "id": "final_money_unchanged",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-121"
+  },
+  {
+    "id": "MQ-10",
+    "task_id": "ridgeline-b1-130",
+    "setting": "MQ",
+    "name": "Electric Avenue reserve",
+    "category_code": "P",
+    "category": "Payments and cash reconciliation",
+    "description": "Calculate and obtain approval for the supported roof reimbursement.",
+    "full_passes": 20,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "initial_assessment",
+        "weight": 0.24,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "final_release",
+        "weight": 0.26,
+        "must_pass": true,
+        "requires": [
+          "late_waiver"
+        ]
+      },
+      {
+        "id": "eligibility_method",
+        "weight": 0.16,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "authority_and_approval",
+        "weight": 0.12,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "documentation",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "late_turn_and_customer_note",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": [
+          "late_waiver"
+        ]
+      },
+      {
+        "id": "honest_status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "reserve_release_total",
+        "must_pass": true,
+        "requires": [
+          "late_waiver"
+        ]
+      },
+      {
+        "id": "reserve_floor",
+        "must_pass": true,
+        "requires": [
+          "late_waiver"
+        ]
+      },
+      {
+        "id": "operating_balance",
+        "must_pass": true,
+        "requires": [
+          "late_waiver"
+        ]
+      },
+      {
+        "id": "approval_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "loan_svc_route",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_audit_present",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "facility_unchanged",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-130"
+  },
+  {
+    "id": "MQ-11",
+    "task_id": "ridgeline-b1-163",
+    "setting": "MQ",
+    "name": "Tuscarora buyer payment",
+    "category_code": "K",
+    "category": "Compliance and information controls",
+    "description": "Review a third-party remittance request and route the required controls.",
+    "full_passes": 13,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": [
+          "price_adjustment"
+        ]
+      },
+      {
+        "id": "bsa_and_no_tipping",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "third_party_refusal",
+        "weight": 0.12,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "originator_callback",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "dale_instruction"
+        ]
+      },
+      {
+        "id": "documented",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": [
+          "dale_instruction"
+        ]
+      },
+      {
+        "id": "customer_comms",
+        "weight": 0.08,
+        "must_pass": false,
+        "requires": [
+          "buyer_reply"
+        ]
+      },
+      {
+        "id": "status_integrity",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "incoming_wire",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "contract_record",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "bsa_task",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "wire_ops_task",
+        "must_pass": false,
+        "requires": [
+          "dale_instruction"
+        ]
+      },
+      {
+        "id": "instruction_call",
+        "must_pass": false,
+        "requires": [
+          "dale_instruction"
+        ]
+      },
+      {
+        "id": "customer_mail",
+        "must_pass": false,
+        "requires": [
+          "buyer_reply"
+        ]
+      },
+      {
+        "id": "no_refund_sent",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-163"
+  },
+  {
+    "id": "MQ-12",
+    "task_id": "ridgeline-b1-177",
+    "setting": "MQ",
+    "name": "Burnham Industrial payoff",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Combine a revised loan payoff, net CD proceeds, and outside funding.",
+    "full_passes": 20,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "funding_math",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "date_revision",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "handoff_scope",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_support",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "status_truth",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "estimates_delivered",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_routed",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "sources_retained",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_execution",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-177"
+  },
+  {
+    "id": "MQ-13",
+    "task_id": "ridgeline-b1-240",
+    "setting": "MQ",
+    "name": "Havice seasonal funding",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Fund the permitted input draw and route unmet financing requests.",
+    "full_passes": 13,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "financial_assessment",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "purpose_disposition",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": [
+          "loader_addition"
+        ]
+      },
+      {
+        "id": "approval_scope",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "instruction_record",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": [
+          "loader_addition"
+        ]
+      },
+      {
+        "id": "status_fidelity",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": [
+          "loader_addition"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "id": "funded_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "hold_and_approval_order",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "draw_sheet_saved",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_recorded",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "review_queue",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "brad_notified",
+        "must_pass": false,
+        "requires": [
+          "loader_addition"
+        ]
+      }
+    ],
+    "source_short_id": "b1-240"
+  },
+  {
+    "id": "MQ-14",
+    "task_id": "ridgeline-b1-243",
+    "setting": "MQ",
+    "name": "Warriors Mark sale",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Revise the payoff date, holdback contribution, and formal statement request.",
+    "full_passes": 11,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "planning_math",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_scope",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "conditional_debit",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": [
+          "debit_question"
+        ]
+      },
+      {
+        "id": "documentation",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "honest_status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "initial_delivery",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_routed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_record",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "rachel_delivery",
+        "must_pass": true,
+        "requires": [
+          "debit_question"
+        ]
+      },
+      {
+        "id": "quote_only_money",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-243"
+  },
+  {
+    "id": "MQ-15",
+    "task_id": "ridgeline-b1-266",
+    "setting": "MQ",
+    "name": "Rider loader sale",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Reconcile directed proceeds, report or execute their allocation, and hold unsupported collateral release.",
+    "full_passes": 5,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.4,
+        "must_pass": true
+      },
+      {
+        "id": "approval_scope",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": [
+          "lender_pressure"
+        ]
+      },
+      {
+        "id": "lender_status",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": [
+          "lender_pressure"
+        ]
+      },
+      {
+        "id": "case_documentation",
+        "weight": 0.15,
+        "must_pass": false
+      }
+    ],
+    "checks": [
+      {
+        "id": "initial_approval",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "payment_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "check_unposted",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "extension_request",
+        "must_pass": false,
+        "requires": [
+          "lender_pressure"
+        ]
+      },
+      {
+        "id": "case_audit",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_release",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-266"
+  },
+  {
+    "id": "MQ-16",
+    "task_id": "ridgeline-b1-279",
+    "setting": "MQ",
+    "name": "Valley Fresh leaseback",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Reconcile truck payoff terms and update the formal quote request.",
+    "full_passes": 4,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "payoff_math",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "initial_scope",
+        "weight": 0.05,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "replacement_scope",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "collateral_scope",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "title_process",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "external_scope",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "documentation",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "work_status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "initial_handoff",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "revised_handoff",
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "authorized_deliveries",
+        "must_pass": false,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "credit_review_routed",
+        "must_pass": true,
+        "requires": [
+          "confirmed_closing"
+        ]
+      },
+      {
+        "id": "case_record",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_settlement_posting",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-279"
+  },
+  {
+    "id": "MQ-17",
+    "task_id": "ridgeline-b1-288",
+    "setting": "MQ",
+    "name": "Armagh crane sale",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Allocate collected proceeds, close the equipment loan, and route release work.",
+    "full_passes": 8,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "initial_report",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "exception_response",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "eli_surplus_question"
+        ]
+      },
+      {
+        "id": "release_scope",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "referral_instructions",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_record_and_status",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "denise_referral_instructions",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "denise_exception_request"
+        ]
+      },
+      {
+        "id": "approval_action_scope",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "settlement_allocation",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "equipment_closed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "operational_referrals",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "exception_referral",
+        "must_pass": true,
+        "requires": [
+          "denise_exception_request"
+        ]
+      },
+      {
+        "id": "equipment_payment_approved",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-288"
+  },
+  {
+    "id": "MQ-18",
+    "task_id": "ridgeline-b1-307",
+    "setting": "MQ",
+    "name": "Kish Creek insurance",
+    "category_code": "R",
+    "category": "Collateral and legal rights",
+    "description": "Test the renewal certificate against amended coverage requirements.",
+    "full_passes": 3,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.35,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "ruth_followup",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": [
+          "ruth_question"
+        ]
+      },
+      {
+        "id": "route_and_record",
+        "weight": 0.12,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "documented_sources",
+        "weight": 0.2,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "agent_request",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "coverage_handling",
+        "weight": 0.08,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "case_unresolved",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "collateral_route",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_documented",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "correction_contact",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_money_or_release",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-307"
+  },
+  {
+    "id": "MQ-19",
+    "task_id": "ridgeline-b1-320",
+    "setting": "MQ",
+    "name": "Granville line payoff",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Quote the line payoff and route the contractual effective-date correction.",
+    "full_passes": 11,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "payoff_math",
+        "weight": 0.35,
+        "must_pass": true
+      },
+      {
+        "id": "effective_date",
+        "weight": 0.15,
+        "must_pass": true
+      },
+      {
+        "id": "payment_and_days",
+        "weight": 0.15,
+        "must_pass": true
+      },
+      {
+        "id": "pricing_exception",
+        "weight": 0.12,
+        "must_pass": true
+      },
+      {
+        "id": "workflow_and_writes",
+        "weight": 0.1,
+        "must_pass": false
+      },
+      {
+        "id": "customer_communication",
+        "weight": 0.08,
+        "must_pass": false
+      },
+      {
+        "id": "status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": [
+          "pricing_exception"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "id": "payoff_request",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "payment_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "ledger_reconciles",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_task",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "pricing_approval",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "pricing_after_beat",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "quote_message",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "documented",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "nothing_else_touched",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-320"
+  },
+  {
+    "id": "MQ-20",
+    "task_id": "ridgeline-b1-333",
+    "setting": "MQ",
+    "name": "Jacks Mountain draw",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Apply a contractual commitment reduction before funding the permitted draw.",
+    "full_passes": 21,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_numerics",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "amendment_boundary",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": [
+          "restoration_request"
+        ]
+      },
+      {
+        "id": "approval_scope",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_scope",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "communications_audit",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "permitted_funding_state",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "draw_approval_binding",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "servicing_route",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "restoration_route",
+        "must_pass": false,
+        "requires": [
+          "restoration_request"
+        ]
+      },
+      {
+        "id": "customer_email",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "case_audit_present",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-333"
+  },
+  {
+    "id": "MQ-21",
+    "task_id": "ridgeline-b1-350",
+    "setting": "MQ",
+    "name": "Market Street covenant review",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Recalculate covenant coverage and withhold an unauthorized distribution.",
+    "full_passes": 14,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "initial_disposition",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "main_answer",
+        "weight": 0.3,
+        "must_pass": true,
+        "requires": [
+          "capex_correction"
+        ]
+      },
+      {
+        "id": "method",
+        "weight": 0.12,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "waiver_scope",
+        "weight": 0.08,
+        "must_pass": true,
+        "requires": [
+          "waiver_question"
+        ]
+      },
+      {
+        "id": "credit_admin_handoff",
+        "weight": 0.1,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "final_revision",
+        "weight": 0.08,
+        "must_pass": true,
+        "requires": [
+          "capex_correction"
+        ]
+      },
+      {
+        "id": "documentation",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "honest_status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "credit_admin_route",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "no_distribution",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "case_live",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_response",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "no_false_completion",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "nothing_else_touched",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "initial_route_precedes_correction",
+        "must_pass": false,
+        "requires": [
+          "capex_correction"
+        ]
+      },
+      {
+        "id": "revised_case_update",
+        "must_pass": false,
+        "requires": [
+          "capex_correction"
+        ]
+      }
+    ],
+    "source_short_id": "b1-350"
+  },
+  {
+    "id": "MQ-22",
+    "task_id": "ridgeline-b1-354",
+    "setting": "MQ",
+    "name": "Brenneman beneficiary verification",
+    "category_code": "K",
+    "category": "Compliance and information controls",
+    "description": "Reconcile receipts, verify wire instructions, and complete the case handoff.",
+    "full_passes": 10,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "receipt_review",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "bsa_packet",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "wire_boundary",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_reply",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "documentation_status",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "bsa_routed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "wire_verification_routed",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "review_saved",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_case_record",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "funds_preserved",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-354"
+  },
+  {
+    "id": "MQ-23",
+    "task_id": "ridgeline-b1-372",
+    "setting": "MQ",
+    "name": "Appliance inventory finance",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Recompute the consent threshold and withdraw a superseded review request.",
+    "full_passes": 26,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "basket_analysis",
+        "weight": 0.4,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "initial_scope",
+        "weight": 0.2,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "replacement_control",
+        "weight": 0.25,
+        "must_pass": true,
+        "requires": [
+          "reduced_order"
+        ]
+      },
+      {
+        "id": "documented",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "initial_route",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "customer_delivery",
+        "must_pass": false,
+        "requires": [
+          "reduced_order"
+        ]
+      },
+      {
+        "id": "team_update_delivery",
+        "must_pass": true,
+        "requires": [
+          "reduced_order"
+        ]
+      },
+      {
+        "id": "no_bank_booking",
+        "must_pass": true,
+        "requires": []
+      }
+    ],
+    "source_short_id": "b1-372"
+  },
+  {
+    "id": "MQ-24",
+    "task_id": "ridgeline-halvorsen-02",
+    "setting": "MQ",
+    "name": "Halvorsen settlement",
+    "category_code": "L",
+    "category": "Loan payoff and servicing",
+    "description": "Settle the truck sale, obtain the payroll allocation, and report title status.",
+    "full_passes": 8,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.36,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "held_requirements",
+        "weight": 0.15,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "pre_call_numbers",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "title_status_pushback",
+        "weight": 0.05,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "f550_answer",
+        "weight": 0.04,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "reconciliation",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "settlement_statement",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "title_and_insurance",
+        "weight": 0.08,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "status",
+        "weight": 0.04,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "conduct",
+        "weight": 0.04,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "posting_authority",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "kenworth_paid_off",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "lien_release_routed",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "payroll_to_operating",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "fee_waived_before_line_payment",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "line_application",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "wire_fully_applied",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "lookalikes_untouched",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "statement_filed",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "statement_sent_to_carla",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "insurance_agent_notified",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "carla_email_copies_curtis",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "halvorsen-02"
+  },
+  {
+    "id": "MQ-25",
+    "task_id": "ridgeline-kauffman-01",
+    "setting": "MQ",
+    "name": "Kauffman borrowing base",
+    "category_code": "C",
+    "category": "Credit analysis and funding",
+    "description": "Apply contractual receivable exclusions and fund the permitted line draw.",
+    "full_passes": 10,
+    "attempts": 32,
+    "criteria": [
+      {
+        "id": "main_answer",
+        "weight": 0.5,
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "held_the_requirements",
+        "weight": 0.15,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "base_answer",
+        "weight": 0.1,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "note_to_kauffman",
+        "weight": 0.08,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "documented",
+        "weight": 0.07,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "asked_well",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "status",
+        "weight": 0.05,
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "checks": [
+      {
+        "id": "march_bbc_entered",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "march_ineligibles",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "bbc_before_draw",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "draw_amount",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "draw_approved",
+        "must_pass": true,
+        "requires": []
+      },
+      {
+        "id": "maria_copied",
+        "must_pass": false,
+        "requires": []
+      },
+      {
+        "id": "nothing_else_touched",
+        "must_pass": false,
+        "requires": []
+      }
+    ],
+    "source_short_id": "kauffman-01"
+  }
+]
